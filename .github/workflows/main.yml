@@ -18,4 +18,4 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ftp://s257395@ruvip63.hostiman.ru/www/tmkorlovdmitriy.ru/TMK_website/src/main/resources/templates/home.html
+          server-dir: ftp://s257395@ruvip63.hostiman.ru/www/tmkorlovdmitriy.ru/TMK_website/src/main/resources/templates/home.html/
