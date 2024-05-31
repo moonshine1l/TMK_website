@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" id="main" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Orlov Dmitriy">
+    <meta name="keywords" content="ТМК, Компания ТМК, ТМК-собственное производство">
+    <meta name="description" content="ТМК - производитель с 1998 г.">
+
+    <title th:text = "${title}"></title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/PNG/shortcut_icon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- HEADER-SECTION------------------------------------------------------------------------------------------ -->
+    <header class="header">
+        <div class="wrapper">
+            <a href="/" class="header-link-none">TMK</a>
+            <ul class="header-info">
+                <li class="header-info-item">
+                    <a href="/about" class="header-link">О компании</a>
+                </li>
+                <li class="header-info-item">
+                    <a href="/product_type" class="header-link">Продукция и сервис</a>
+                </li>
+                <li class="header-info-item">
+                    <a href="/appeal" class="header-link">Обратная связь</a>
+                </li>
+                <li class="header-info-item">
+                    <a href="/contacts" class="header-link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- MAIN-SECTION------------------------------------------------------------------------------------------ -->
+    <main class="main">
+        <section class=" intro">
+        <div class="intro_wrapper" id="intro_wrapper">
+            <h1 class="intro_title">
+                Собственное производство - не просто плюс.<br/>Это решающий аргумент!
+            </h1>
+            <p class="intro_subtitle">
+                ТМК - производитель с 1998 г.
+            </p>
+        </div>
+        </section>
+    </main>
+    <!-- CONTENT-SECTION------------------------------------------------------------------------------------------------- -->
+    <!-- FOOTER-SECTION-------------------------------------------------------------------------------------------- -->
+    <footer class="footer">
+        <div class="footer_frame">
+            <div class="footer_list">
+                <div class="footer_list-item">Copyright © 2020-2024 ПАО «ТМК»</div>
+                <div class="footer_list-item">Горячая линия: Тел.: 8-800-700-8072</div>
+                <div class="footer_list-item">E-mail: 8072@tmk-group.com</div>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>

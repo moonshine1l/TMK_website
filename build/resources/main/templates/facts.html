@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" id="main" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Orlov Dmitriy">
+    <meta name="keywords" content="ТМК, Компания ТМК, ТМК-собственное производство">
+    <meta name="description" content="ТМК - производитель с 1998 г.">
+
+    <title th:text = "${title}"></title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/PNG/shortcut_icon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- HEADER-SECTION------------------------------------------------------------------------------------------ -->
+    <header class="header">
+        <div class="wrapper">
+            <a href="/" class="header-link-none">TMK</a>
+            <ul class="header-info">
+                <li class="header-info-item">
+                    <a href="/about" class="header-link">О компании</a>
+                </li>
+                <li class="header-info-item">
+                    <a href="/product_type" class="header-link">Продукция и сервис</a>
+                </li>
+                <li class="header-info-item">
+                    <a href="/appeal" class="header-link">Обратная связь</a>
+                </li>
+                <li class="header-info-item">
+                    <a href="/contacts" class="header-link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- CONTENT-SECTION------------------------------------------------------------------------------------------------- -->
+    <div class="facts-company-container">
+      <h class="facts-company-title">КЛЮЧЕВЫЕ ФАКТЫ</h>
+      <p class="facts-company-text">
+        Трубная Металлургическая Компания (ТМК) – ведущий поставщик стальных труб, трубных решений и сопутствующих сервисов для различных секторов экономики. ТМК производит нарезные трубы, включая специальные трубы и трубопроводные системы, и другую продукцию для энергетики, химической промышленности, машиностроения, строительства и других отраслей. Компания обладает широкими компетенциями в машиностроительном сегменте, поставляет инженерные решения для энергетических и металлургических производств, а также разрабатывает новую линейку продукции для водородной энергетики.<br>
+        <br>
+        ТМК объединяет производственные площадки и торговые представительства в России и за рубежом. Компании также принадлежат нефтесервисные предприятия, объединенные в рамках «ТМК Нефтегазсервис». Компания сочетает поставки продукции с широким комплексом сервисных услуг по подбору трубной продукции, включая разработку новейших образцов, а также по ее сопровождению, складированию и ремонту.<br>
+        <br>
+        ТМК совершенствует свои научно-технические компетенции и ведет разработку передовых решений на базе научно-технического центра (НТЦ) в Москве и Русского научно-исследовательского института трубной промышленности (РусНИТИ) в Челябинске. Мощности компании обеспечивают полный цикл создания передовых трубных решений – от концепта до проведения испытаний и запуска в производство.<br>
+        <br>
+        ТМК располагает разветвленной сбытовой сетью, которая позволяет реализовывать продукцию потребителям в России и за рубежом. Акции компании обращаются на Московской бирже.
+      </p>
+    </div>
+    <!-- FOOTER-SECTION-------------------------------------------------------------------------------------------- -->
+    <footer class="footer">
+        <div class="footer_frame">
+            <div class="footer_list">
+                <div class="footer_list-item">Copyright © 2020-2024 ПАО «ТМК»</div>
+                <div class="footer_list-item">Горячая линия: Тел.: 8-800-700-8072</div>
+                <div class="footer_list-item">E-mail: 8072@tmk-group.com</div>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>
