@@ -48,7 +48,7 @@ html {
 }
 
 body {
-    margin: 0;
+    margin-top: 90px;
     font-family: "Roboto";
     font-style: normal;
     font-size: 20px;
@@ -68,6 +68,10 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    @media(max-width: 400px){
+     justify-content: left;
+         align-items: left;
+     }
 }
 
 .header {
@@ -78,15 +82,23 @@ body {
     width: 100%;
     height: 80px;
     background-color: #c9a21ff6;
+    margin-bottom: 20px;
+
 }
 
 .header_list {
     display: flex;
     flex-wrap: nowrap;
+    @media(max-width: 400px){
+           width: 95%;
+        }
 }
 
 .header_item {
     margin-right: 50px;
+    @media(max-width:400px) {
+            margin-right: 5px;
+        }
 }
 
 .header_item:last-child {
@@ -117,28 +129,27 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     height: 30px;
-    width: auto;
+    width: 100%;
     gap: 100px;
+    @media(max-width:767px) {
+        gap: 5px;
+    }
 }
 
 /* ---------------XXXXXXXXXXXXXX---------------- */
 @media(max-width:1024px) {
-    .header-info {
-        gap: 40px;
-    }
+         .header-info {
+             gap: 10px;
+         }
 }
 
 @media(max-width:758px) {
     .header-link {
-        display: none;
-    }
-
-    .header-link {
-        display: none;
+        display: flex;
     }
 
     .header-info {
-        display: none;
+        display: flex;
     }
 
     .wrapper {
@@ -193,6 +204,11 @@ body {
     text-decoration: none;
     margin-left: 20px;
     margin-right: 100px;
+    @media(max-width:767px) {
+    margin-left: 5px;
+            margin-right: 20px;
+        }
+
 }
 
 .header-link:hover {
@@ -575,7 +591,11 @@ input[type="password"]:focus {
 .image_list {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+
+    @media(max-width: 400px){
+            justify-content: left;
+            flex-direction: column;
+        }
 }
 
 .image_list-frame {
@@ -591,6 +611,16 @@ input[type="password"]:focus {
     margin-left: 25px;
     margin-right: 25px;
     gap: 40px;
+    @media(max-width: 767px){
+        min-width: 300px;
+        width:350px;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-content: left;
+        align-items: left;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
 }
 
 .image_list-frame-pic {
@@ -598,7 +628,6 @@ input[type="password"]:focus {
     align-items: flex-end;
     border-radius: 50px;
     max-width: 380px;
-    min-width: 300px;
     width: 100%;
     height: 300px;
 }
@@ -610,10 +639,11 @@ input[type="password"]:focus {
     align-items: center;
     color: #ffffff;
     background-color: #221e14a0;
-    width: 400px;
+    width: 380px;
     height: 60px;
     border-radius: 0 0 10px 10px;
     text-decoration-skip-ink: none
+
 }
 
 .image_list-frame-item {
@@ -627,6 +657,7 @@ input[type="password"]:focus {
             rgba(0, 0, 0, 0.5) 100%);
     background-size: cover;
     border-radius: 10px;
+
 }
 
 .image_list-frame-item:hover {
@@ -685,6 +716,11 @@ input[type="password"]:focus {
     background-color: white;
     align-items: center;
     padding: 20px;
+
+    @media(max-width: 767px){
+        width: 100%;
+        height: 275px;
+        }
 }
 
 .two {
@@ -699,13 +735,19 @@ input[type="password"]:focus {
     display: flex;
     align-items: left;
     justify-content: left;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .four {
     align_items: right;
     width: 15%;
-    margin-left: 15px
+    margin-left: 15px;
+    @media(max-width: 767px){
+    width: 10%;
+        margin-left: 15px;
+           font-weight: 10;
+           font-size: 12pt;
+                }
 }
 
 .img_class {
@@ -713,6 +755,12 @@ input[type="password"]:focus {
     height: 200px;
     border: 1 px solid black;
     padding-left: 20px;
+
+    @media(max-width: 767px){
+            width: 100%;
+            height: 100%;
+            padding-left: 0px;
+            }
 }
 
 .main,
@@ -730,8 +778,21 @@ input[type="password"]:focus {
     font-weight: 600;
     justify-content: left;
     align-items: left;
+    @media(max-width: 767px){
+    justify-content: center;
+        align-items: center;
+      width: 100%;
+       font-weight: 10;
+       font-size: 12pt;
+            }
+
 }
 
 .p1 {
-    width: 100%
+    width: 100%;
+    @media(max-width: 767px){
+    width: 50%;
+    font-weight: 10;
+    font-size: 10pt;
+     }
 }
